@@ -22,10 +22,12 @@ var md = markdownit({
 				} catch (e) {}
 			}
 			return '';
-		}
+		},
+		linkify: true,
+		typographer: true,
 	})
-	.use(markdownitFootnote);
-
+	.use(markdownitFootnote)
+	.use(markdownitTaskLists, {enabled: false}); // Support task list, but can only edit in md file
 
 var hashto;
 
