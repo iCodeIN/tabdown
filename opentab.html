@@ -62,7 +62,7 @@
                 indexUrl = safari.extension.baseURI + "markdown-editor/index.html";
                 openedTabs = safari.application.activeBrowserWindow.tabs
                 for (var i = 0; i < openedTabs.length; i++) {
-                    if (openedTabs[i].url.startsWith(indexUrl)) {
+                    if (openedTabs[i].url && openedTabs[i].url.startsWith(indexUrl)) {
                         openedTabs[i].activate();
                         return;
                     }
