@@ -13,25 +13,30 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.4</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Database Quota</key>
 		<integer>1048576</integer>
 		<key>Global Page</key>
 		<string>opentab.html</string>
-	</dict>
-	<key>Content</key>
-	<dict>
-		<key>Scripts</key>
-		<dict>
-			<key>End</key>
-			<array>
-				<string>inject.js</string>
-			</array>
-		</dict>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>com.wangfenjin.tabdown</string>
+				<key>Identifier</key>
+				<string>com.wangfenjin.tabdown</string>
+				<key>Image</key>
+				<string>toolbar.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>TabDown</string>
+			</dict>
+		</array>
 	</dict>
 	<key>Description</key>
 	<string>Markdown Editor in New Tab</string>

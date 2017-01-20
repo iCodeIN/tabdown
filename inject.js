@@ -1,1 +1,1 @@
-safari.self.tab.dispatchMessage("tabdown", document.title);
+// safari.self.tab.dispatchMessage("tabdown", document.title);
